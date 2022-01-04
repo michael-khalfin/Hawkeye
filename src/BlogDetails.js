@@ -12,15 +12,15 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      { isPending && <div>Loading...</div> }
+      { isPending && <div></div> }
       { error && <div>{ error }</div> }
       { blog && (
         <article>
           <h2>{ blog.title }</h2>
           <Link to={`/authors/${blog.author}`}>
-            <p>Written by { blog.author }</p>
+            <p>Written by <span className="clickable">{ blog.author }</span></p>
           </Link>
-          <div> <p> { JSON.stringify(blog.body).split("\\n").join("\n") } </p> </div>
+          <div className="wrap"> <pre>{blog.body} </pre> </div>
         </article>
       )}
     </div>

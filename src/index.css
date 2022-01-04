@@ -15,7 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #0055FF;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,10 +26,10 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #0055FF;
 }
 .content {
-  max-width: 600px;
+  max-width: 860px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -45,7 +45,7 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #0055FF;
   margin-bottom: 8px;
 }
 .blog-preview a{
@@ -53,16 +53,23 @@
 }
 
 /* blog details page */
+.blog-details h1 {
+  font-size: 30px;
+  color: #0055FF;
+  margin-bottom: 10px;
+}
+
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #0055FF;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
+
 .blog-details button {
-  background: #f1356d;
+  background: #0055FF;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -74,9 +81,18 @@
   text-decoration: none;
 }
 
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 /* create new blog form */
 .create {
-  max-width: 400px;
+  max-width: 860px;
   margin: 0 auto;
   text-align: center;
 }
@@ -86,7 +102,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #0055FF;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -98,10 +114,31 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #0055FF;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.clickable {
+  color: #0055FF;
+  font-weight: bold;
+}
+
+.textarea {
+  height: 300px;
+}
+
+.search {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.search input {
+  width: 60%;
+  font-size: 16px;
+  text-align:center;
 }
